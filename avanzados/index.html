@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios avanzados de JavaScript</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <h1>Ejercicios avanzados</h1>
+    <p>Practica objetos, arrays de objetos, funciones y lógica combinada.</p>
+  </header>
+
+  <div class="aviso">
+    <p>
+      <strong>Consejo:</strong>
+      Si pulsas un botón y no aparece ningún resultado, abre la consola del
+      navegador con <strong>F12</strong>. Allí podrás ver si hay algún error
+      de sintaxis, en qué archivo está y en qué línea.
+    </p>
+  </div>
+
+  <main class="contenedor">
+
+    <section class="ejercicio" id="ejercicio1">
+      <h2>Ejercicio 1: Crear un objeto persona</h2>
+
+      <p>
+        Crea un objeto llamado <code>persona</code> con las propiedades
+        <code>nombre</code>, <code>edad</code> y <code>ciudad</code>.
+      </p>
+
+      <p>
+        Muestra un mensaje como:
+        <strong>“Ana tiene 30 años y vive en Madrid”</strong>.
+      </p>
+
+      <p class="esperado">
+        <strong>Resultado esperado:</strong>
+        Ana tiene 30 años y vive en Madrid
+      </p>
+
+      <button onclick="ejercicio1()">Ejecutar ejercicio</button>
+
+      <p class="resultado" id="resultado1"></p>
+    </section>
+
+    <section class="ejercicio" id="ejercicio2">
+      <h2>Ejercicio 2: Recorrer un array de objetos</h2>
+
+      <p>
+        Dado un array de productos con <code>nombre</code> y
+        <code>precio</code>, muestra cada producto en una línea.
+      </p>
+
+      <p class="esperado">
+        <strong>Resultado esperado:</strong>
+        Teclado: 30 € — Ratón: 15 € — Monitor: 150 €
+      </p>
+
+      <button onclick="ejercicio2()">Ejecutar ejercicio</button>
+
+      <p class="resultado" id="resultado2"></p>
+    </section>
+
+    <section class="ejercicio" id="ejercicio3">
+      <h2>Ejercicio 3: Filtrar productos caros</h2>
+
+      <p>
+        Dado el mismo array de productos, muestra solo los que cuestan
+        más de 50 €.
+      </p>
+
+      <p class="esperado">
+        <strong>Resultado esperado:</strong> Monitor: 150 €
+      </p>
+
+      <button onclick="ejercicio3()">Ejecutar ejercicio</button>
+
+      <p class="resultado" id="resultado3"></p>
+    </section>
+
+    <section class="ejercicio" id="ejercicio4">
+      <h2>Ejercicio 4: Contar mayores de edad</h2>
+
+      <p>
+        Dado un array de personas con <code>nombre</code> y
+        <code>edad</code>, cuenta cuántas tienen 18 años o más.
+      </p>
+
+      <p class="esperado">
+        <strong>Resultado esperado:</strong> Mayores de edad: 2
+      </p>
+
+      <button onclick="ejercicio4()">Ejecutar ejercicio</button>
+
+      <p class="resultado" id="resultado4"></p>
+    </section>
+
+    <section class="ejercicio" id="ejercicio5">
+      <h2>Ejercicio 5: Calcular el total de una compra</h2>
+
+      <p>
+        Dado un array de productos con <code>nombre</code>,
+        <code>precio</code> y <code>cantidad</code>, calcula el total
+        de la compra.
+      </p>
+
+      <p class="esperado">
+        <strong>Resultado esperado:</strong> Total: 95 €
+      </p>
+
+      <button onclick="ejercicio5()">Ejecutar ejercicio</button>
+
+      <p class="resultado" id="resultado5"></p>
+    </section>
+
+    <section class="ejercicio" id="ejercicio6">
+      <h2>Ejercicio 6: Función que busca una persona</h2>
+
+      <p>
+        Crea una función llamada <code>buscarPersona</code> que reciba un
+        array de personas y un nombre. Debe devolver la persona si la
+        encuentra o <code>null</code> si no.
+      </p>
+
+      <p>
+        Muestra el resultado de buscar a <strong>“Ana”</strong> y a
+        <strong>“Luis”</strong>.
+      </p>
+
+      <p class="esperado">
+        <strong>Resultado esperado:</strong>
+        Ana encontrada — Luis no encontrado
+      </p>
+
+      <button onclick="ejercicio6()">Ejecutar ejercicio</button>
+
+      <p class="resultado" id="resultado6"></p>
+    </section>
+
+  </main>
+
+  <script src="js/ejercicio1.js" defer></script>
+  <script src="js/ejercicio2.js" defer></script>
+  <script src="js/ejercicio3.js" defer></script>
+  <script src="js/ejercicio4.js" defer></script>
+  <script src="js/ejercicio5.js" defer></script>
+  <script src="js/ejercicio6.js" defer></script>
+
+</body>
+</html>
