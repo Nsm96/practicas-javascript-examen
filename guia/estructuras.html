@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de estructuras JavaScript</title>
+  <link rel="stylesheet" href="estructuras.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <h1>Guía de estructuras JavaScript</h1>
+    <p>Ejemplos clicables de las estructuras principales.</p>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="estructura">
+      <h2>Variables</h2>
+      <p>Usa <code>const</code> cuando el valor no cambia y <code>let</code> cuando sí puede cambiar.</p>
+      <button onclick="ejemploVariables()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoVariables"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>if / else if / else</h2>
+      <p>Permite elegir entre varias posibilidades.</p>
+      <button onclick="ejemploIf()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoIf"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>Operador ternario</h2>
+      <p>Es una forma corta de escribir un <code>if/else</code>.</p>
+      <button onclick="ejemploTernario()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoTernario"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>Bucle for</h2>
+      <p>Repite un bloque de código un número determinado de veces.</p>
+      <button onclick="ejemploFor()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoFor"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>Función normal</h2>
+      <p>Agrupa código reutilizable y puede devolver un resultado.</p>
+      <button onclick="ejemploFuncion()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoFuncion"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>Función flecha</h2>
+      <p>Es otra forma de escribir funciones.</p>
+      <button onclick="ejemploFlecha()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoFlecha"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>Callback</h2>
+      <p>Una callback es una función que se pasa a otra función.</p>
+      <button onclick="ejemploCallback()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoCallback"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>Arrays</h2>
+      <p>Un array guarda una lista de valores.</p>
+      <button onclick="ejemploArray()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoArray"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>Objetos</h2>
+      <p>Un objeto guarda datos relacionados mediante propiedades.</p>
+      <button onclick="ejemploObjeto()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoObjeto"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>filter</h2>
+      <p>Crea un array nuevo con los elementos que cumplen una condición.</p>
+      <button onclick="ejemploFilter()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoFilter"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>map</h2>
+      <p>Crea un array nuevo transformando cada elemento.</p>
+      <button onclick="ejemploMap()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoMap"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>find</h2>
+      <p>Devuelve el primer elemento que cumple una condición.</p>
+      <button onclick="ejemploFind()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoFind"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>reduce</h2>
+      <p>Acumula un resultado a partir de los elementos de un array.</p>
+      <button onclick="ejemploReduce()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoReduce"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>Spread</h2>
+      <p>Permite expandir los valores de un array dentro de otro.</p>
+      <button onclick="ejemploSpread()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoSpread"></p>
+    </section>
+
+    <section class="estructura">
+      <h2>DOM básico</h2>
+      <p>Permite seleccionar elementos del HTML y modificar su contenido.</p>
+      <button onclick="ejemploDom()">Probar ejemplo</button>
+      <p class="resultado" id="resultadoDom"></p>
+    </section>
+
+  </main>
+
+  <script src="estructuras.js" defer></script>
+
+</body>
+</html>
