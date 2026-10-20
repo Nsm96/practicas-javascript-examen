@@ -15,8 +15,13 @@ import { productos } from "./catalogo.js";
 import { nombresDisponibles } from "./filtrarCatalogo.js";
 
 function ejercicio6() {
+  // Declara las variables necesarias
+
+
   // Implementa la lógica necesaria
 
 
   // Muestra el resultado
+  const resultado = document.querySelector("#resultado6");
+  resultado.textContent = "";
 }

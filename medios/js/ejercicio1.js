@@ -23,4 +23,6 @@ function ejercicio1() {
 
 
   // Muestra el resultado
+  const resultado = document.querySelector("#resultado1");
+  resultado.textContent = "";
 }

@@ -19,4 +19,6 @@ function ejercicio6() {
 
 
   // Muestra el resultado
+  const resultado = document.querySelector("#resultado6");
+  resultado.textContent = "";
 }

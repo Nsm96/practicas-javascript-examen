@@ -21,4 +21,6 @@ function ejercicio5() {
 
 
   // Muestra el resultado
+  const resultado = document.querySelector("#resultado5");
+  resultado.textContent = "";
 }
