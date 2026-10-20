@@ -14,12 +14,16 @@
 
 function ejercicio1() {
   // Declara las variables necesarias
-
-
+  const numero = -8;
+  let mensaje = "";
   // Implementa la lógica necesaria
-
+  if (numero < 0) {
+   mensaje = "Es negativo"
+  } else {
+   mensaje = "Es positivo";
+  }
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado1");
-  resultado.textContent = "";
+  resultado.textContent = mensaje;
 }

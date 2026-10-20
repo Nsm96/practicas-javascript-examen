@@ -15,12 +15,18 @@
 
 function ejercicio3() {
   // Declara las variables necesarias
-
-
+  const numero = 7;
+  let multiplicacion = 0;
+  let mensaje ="";
   // Implementa la lógica necesaria
-
+  for (let i = 1; i <= 10; i++){
+    multiplicacion = numero * i;
+    mensaje = numero + "x" + i + "=" + multiplicacion;
+  }
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado3");
   resultado.textContent = "";
 }
+
+// Comentario Nico: No sé hacerlo asi con queryselector o funcion, pero si lo hago con console.log funciona.

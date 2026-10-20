@@ -15,12 +15,15 @@
 
 function ejercicio5() {
   // Declara las variables necesarias
-
-
+  const precio = 100;
+  const iva = 21;
+  let totalIva = 0;
+  let precioFinal = 0;
   // Implementa la lógica necesaria
-
+  totalIva = precio * iva / 100;
+  precioFinal = precio + totalIva;
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado5");
-  resultado.textContent = "";
+  resultado.textContent = precioFinal;
 }

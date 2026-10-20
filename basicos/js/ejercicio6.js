@@ -13,12 +13,18 @@
 
 function ejercicio6() {
   // Declara las variables necesarias
-
+  const numero1 = 12;
+  const numero2 = 9;
+  let mensaje = "";
 
   // Implementa la lógica necesaria
-
+  if (numero1 > numero2){
+    mensaje = `${numero1} es el mayor.`
+  } else {
+    mensaje = `${numero2} es el mayor.`
+  }
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado6");
-  resultado.textContent = "";
+  resultado.textContent = mensaje;
 }

@@ -17,12 +17,19 @@
 
 function ejercicio2() {
   // Declara las variables necesarias
-
+  let importe = 120;
+  const descuento = 10;
+  const minimoParaDescuento = 100;
+  let conDescuento = 0;
+  let totalPagar = 0;
 
   // Implementa la lógica necesaria
-
+  if (importe >= minimoParaDescuento){
+    conDescuento = importe * descuento / 100;
+    totalPagar = importe - conDescuento;
+  }
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado2");
-  resultado.textContent = "";
+  resultado.textContent = totalPagar;
 }

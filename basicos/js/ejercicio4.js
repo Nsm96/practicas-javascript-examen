@@ -14,12 +14,17 @@
 
 function ejercicio4() {
   // Declara las variables necesarias
-
+  const numero = 14;
+  let mensaje = "";
 
   // Implementa la lógica necesaria
-
+  if (numero % 2 === 0){
+    mensaje = "Es par";
+  } else {
+    mensaje = "Es impar";
+  }
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado4");
-  resultado.textContent = "";
+  resultado.textContent = mensaje;
 }
