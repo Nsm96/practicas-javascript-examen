@@ -1,13 +1,11 @@
 /*
-  EJERCICIO 4: CONTAR MAYORES DE EDAD
+  EJERCICIO 4: VALOR DE UN INVENTARIO
 
   ENUNCIADO:
-  Dado un array de personas con nombre y edad, cuenta cuántas
-  tienen 18 años o más.
+  Calcula el valor total del inventario con reduce, sumando precio por stock de cada producto.
 
   OBJETIVO:
-  Piensa cómo recorrer el array y contar los elementos que cumplen
-  una condición.
+  Piensa cómo usar reduce para acumular un total.
 
   PISTA:
   Consulta analisis.md si necesitas orientación.

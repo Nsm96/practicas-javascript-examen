@@ -1,13 +1,11 @@
 /*
-  EJERCICIO 2: RECORRER UN ARRAY DE OBJETOS
+  EJERCICIO 2: FILTRAR Y TRANSFORMAR NOTAS
 
   ENUNCIADO:
-  Dado un array de productos con nombre y precio, muestra cada
-  producto en una línea.
+  Dado el array [4, 7, 9, 3], obtén los aprobados con filter y el doble de cada nota con map.
 
   OBJETIVO:
-  Piensa cómo recorrer el array y cómo acceder a las propiedades
-  de cada objeto.
+  Piensa cómo usar filter y map con funciones flecha.
 
   PISTA:
   Consulta analisis.md si necesitas orientación.

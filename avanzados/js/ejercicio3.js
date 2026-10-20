@@ -1,12 +1,11 @@
 /*
-  EJERCICIO 3: FILTRAR PRODUCTOS CAROS
+  EJERCICIO 3: BUSCAR UN PRODUCTO
 
   ENUNCIADO:
-  Dado el mismo array de productos, muestra solo los que cuestan
-  más de 50 €.
+  Busca el producto con id = 2 usando find. Si no existe, muestra “Producto no encontrado”.
 
   OBJETIVO:
-  Piensa cómo recorrer el array y comprobar una condición.
+  Piensa cómo usar find sobre un array de objetos.
 
   PISTA:
   Consulta analisis.md si necesitas orientación.

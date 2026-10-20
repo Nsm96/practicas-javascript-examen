@@ -1,26 +1,20 @@
 /*
-  EJERCICIO 6: FUNCIÓN QUE BUSCA UNA PERSONA
+  EJERCICIO 6: FILTRAR CATÁLOGO CON MÓDULOS
 
   ENUNCIADO:
-  Crea una función llamada buscarPersona que reciba un array de
-  personas y un nombre.
-
-  Debe devolver la persona si la encuentra o null si no.
-
-  Muestra el resultado de buscar a “Ana” y a “Luis”.
+  Usa catalogo.js y filtrarCatalogo.js para obtener los nombres de los productos con stock.
 
   OBJETIVO:
-  Piensa cómo recorrer el array y cómo devolver un valor según
-  si encuentras o no la persona.
+  Piensa cómo importar módulos y usar filter y map.
 
   PISTA:
   Consulta analisis.md si necesitas orientación.
 */
 
+import { productos } from "./catalogo.js";
+import { nombresDisponibles } from "./filtrarCatalogo.js";
+
 function ejercicio6() {
-  // Declara las variables necesarias
-
-
   // Implementa la lógica necesaria
 
 

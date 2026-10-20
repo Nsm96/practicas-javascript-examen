@@ -10,7 +10,7 @@
 
   <header class="cabecera">
     <h1>Ejercicios avanzados</h1>
-    <p>Practica objetos, arrays de objetos, funciones y lógica combinada.</p>
+    <p>Practica funciones flecha, callbacks, filter, map, find, reduce, spread y módulos.</p>
   </header>
 
   <div class="aviso">
@@ -25,119 +25,50 @@
   <main class="contenedor">
 
     <section class="ejercicio" id="ejercicio1">
-      <h2>Ejercicio 1: Crear un objeto persona</h2>
-
-      <p>
-        Crea un objeto llamado <code>persona</code> con las propiedades
-        <code>nombre</code>, <code>edad</code> y <code>ciudad</code>.
-      </p>
-
-      <p>
-        Muestra un mensaje como:
-        <strong>“Ana tiene 30 años y vive en Madrid”</strong>.
-      </p>
-
-      <p class="esperado">
-        <strong>Resultado esperado:</strong>
-        Ana tiene 30 años y vive en Madrid
-      </p>
-
+      <h2>Ejercicio 1: Función flecha y callback</h2>
+      <p>Crea una función flecha <code>triplicar</code> y pásala a <code>aplicar(4, triplicar)</code>.</p>
+      <p class="esperado"><strong>Resultado esperado:</strong> 12</p>
       <button onclick="ejercicio1()">Ejecutar ejercicio</button>
-
       <p class="resultado" id="resultado1"></p>
     </section>
 
     <section class="ejercicio" id="ejercicio2">
-      <h2>Ejercicio 2: Recorrer un array de objetos</h2>
-
-      <p>
-        Dado un array de productos con <code>nombre</code> y
-        <code>precio</code>, muestra cada producto en una línea.
-      </p>
-
-      <p class="esperado">
-        <strong>Resultado esperado:</strong>
-        Teclado: 30 € — Ratón: 15 € — Monitor: 150 €
-      </p>
-
+      <h2>Ejercicio 2: Filtrar y transformar notas</h2>
+      <p>Dado <code>[4, 7, 9, 3]</code>, obtén los aprobados con <code>filter</code> y el doble de cada nota con <code>map</code>.</p>
+      <p class="esperado"><strong>Resultado esperado:</strong> Aprobados: 7, 9 — Dobles: 8, 14, 18, 6</p>
       <button onclick="ejercicio2()">Ejecutar ejercicio</button>
-
       <p class="resultado" id="resultado2"></p>
     </section>
 
     <section class="ejercicio" id="ejercicio3">
-      <h2>Ejercicio 3: Filtrar productos caros</h2>
-
-      <p>
-        Dado el mismo array de productos, muestra solo los que cuestan
-        más de 50 €.
-      </p>
-
-      <p class="esperado">
-        <strong>Resultado esperado:</strong> Monitor: 150 €
-      </p>
-
+      <h2>Ejercicio 3: Buscar un producto</h2>
+      <p>Busca el producto con <code>id = 2</code> usando <code>find</code>. Si no existe, muestra “Producto no encontrado”.</p>
+      <p class="esperado"><strong>Resultado esperado:</strong> Producto encontrado: Lápiz</p>
       <button onclick="ejercicio3()">Ejecutar ejercicio</button>
-
       <p class="resultado" id="resultado3"></p>
     </section>
 
     <section class="ejercicio" id="ejercicio4">
-      <h2>Ejercicio 4: Contar mayores de edad</h2>
-
-      <p>
-        Dado un array de personas con <code>nombre</code> y
-        <code>edad</code>, cuenta cuántas tienen 18 años o más.
-      </p>
-
-      <p class="esperado">
-        <strong>Resultado esperado:</strong> Mayores de edad: 2
-      </p>
-
+      <h2>Ejercicio 4: Valor de un inventario</h2>
+      <p>Calcula el valor total del inventario con <code>reduce</code>, sumando precio por stock de cada producto.</p>
+      <p class="esperado"><strong>Resultado esperado:</strong> Valor total del inventario: 52 €</p>
       <button onclick="ejercicio4()">Ejecutar ejercicio</button>
-
       <p class="resultado" id="resultado4"></p>
     </section>
 
     <section class="ejercicio" id="ejercicio5">
-      <h2>Ejercicio 5: Calcular el total de una compra</h2>
-
-      <p>
-        Dado un array de productos con <code>nombre</code>,
-        <code>precio</code> y <code>cantidad</code>, calcula el total
-        de la compra.
-      </p>
-
-      <p class="esperado">
-        <strong>Resultado esperado:</strong> Total: 95 €
-      </p>
-
+      <h2>Ejercicio 5: Copiar y ampliar un array con spread</h2>
+      <p>Dado <code>[5, 8, 6]</code>, crea una copia y añade un 9 sin modificar el original.</p>
+      <p class="esperado"><strong>Resultado esperado:</strong> Original: 5, 8, 6 — Ampliado: 5, 8, 6, 9</p>
       <button onclick="ejercicio5()">Ejecutar ejercicio</button>
-
       <p class="resultado" id="resultado5"></p>
     </section>
 
     <section class="ejercicio" id="ejercicio6">
-      <h2>Ejercicio 6: Función que busca una persona</h2>
-
-      <p>
-        Crea una función llamada <code>buscarPersona</code> que reciba un
-        array de personas y un nombre. Debe devolver la persona si la
-        encuentra o <code>null</code> si no.
-      </p>
-
-      <p>
-        Muestra el resultado de buscar a <strong>“Ana”</strong> y a
-        <strong>“Luis”</strong>.
-      </p>
-
-      <p class="esperado">
-        <strong>Resultado esperado:</strong>
-        Ana encontrada — Luis no encontrado
-      </p>
-
+      <h2>Ejercicio 6: Filtrar catálogo con módulos</h2>
+      <p>Usa <code>catalogo.js</code> y <code>filtrarCatalogo.js</code> para obtener los nombres de los productos con stock.</p>
+      <p class="esperado"><strong>Resultado esperado:</strong> Productos disponibles: Cuaderno, Libro</p>
       <button onclick="ejercicio6()">Ejecutar ejercicio</button>
-
       <p class="resultado" id="resultado6"></p>
     </section>
 
@@ -148,7 +79,7 @@
   <script src="js/ejercicio3.js" defer></script>
   <script src="js/ejercicio4.js" defer></script>
   <script src="js/ejercicio5.js" defer></script>
-  <script src="js/ejercicio6.js" defer></script>
+  <script type="module" src="js/ejercicio6.js" defer></script>
 
 </body>
 </html>

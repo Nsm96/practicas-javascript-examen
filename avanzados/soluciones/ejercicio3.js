@@ -1,18 +1,20 @@
 function ejercicio3() {
   const productos = [
-    { nombre: "Teclado", precio: 30 },
-    { nombre: "Ratón", precio: 15 },
-    { nombre: "Monitor", precio: 150 }
+    { id: 1, nombre: "Cuaderno" },
+    { id: 2, nombre: "Lápiz" },
+    { id: 3, nombre: "Libro" }
   ];
 
-  let lineas = [];
+  const encontrado = productos.find((producto) => producto.id === 2);
 
-  for (const producto of productos) {
-    if (producto.precio > 50) {
-      lineas.push(producto.nombre + ": " + producto.precio + " €");
-    }
+  let mensaje;
+
+  if (encontrado) {
+    mensaje = "Producto encontrado: " + encontrado.nombre;
+  } else {
+    mensaje = "Producto no encontrado";
   }
 
-  const resultado = document.querySelector("#resultado3");
-  resultado.textContent = lineas.join(" — ");
+  const salida = document.querySelector("#resultado3");
+  salida.textContent = mensaje;
 }

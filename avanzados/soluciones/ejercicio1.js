@@ -1,14 +1,12 @@
+const triplicar = (numero) => numero * 3;
+
+function aplicar(numero, operacion) {
+  return operacion(numero);
+}
+
 function ejercicio1() {
-  const persona = {
-    nombre: "Ana",
-    edad: 30,
-    ciudad: "Madrid"
-  };
+  const resultado = aplicar(4, triplicar);
 
-  const mensaje =
-    persona.nombre + " tiene " + persona.edad +
-    " años y vive en " + persona.ciudad;
-
-  const resultado = document.querySelector("#resultado1");
-  resultado.textContent = mensaje;
+  const salida = document.querySelector("#resultado1");
+  salida.textContent = "Resultado: " + resultado;
 }

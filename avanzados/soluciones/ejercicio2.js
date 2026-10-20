@@ -1,16 +1,11 @@
 function ejercicio2() {
-  const productos = [
-    { nombre: "Teclado", precio: 30 },
-    { nombre: "Ratón", precio: 15 },
-    { nombre: "Monitor", precio: 150 }
-  ];
+  const notas = [4, 7, 9, 3];
 
-  let lineas = [];
+  const aprobados = notas.filter((nota) => nota >= 5);
+  const dobles = notas.map((nota) => nota * 2);
 
-  for (const producto of productos) {
-    lineas.push(producto.nombre + ": " + producto.precio + " €");
-  }
-
-  const resultado = document.querySelector("#resultado2");
-  resultado.textContent = lineas.join(" — ");
+  const salida = document.querySelector("#resultado2");
+  salida.textContent =
+    "Aprobados: " + aprobados.join(", ") +
+    " — Dobles: " + dobles.join(", ");
 }

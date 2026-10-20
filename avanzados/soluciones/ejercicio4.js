@@ -1,18 +1,15 @@
 function ejercicio4() {
-  const personas = [
-    { nombre: "Ana", edad: 20 },
-    { nombre: "Luis", edad: 16 },
-    { nombre: "Marta", edad: 25 }
+  const productos = [
+    { nombre: "Cuaderno", precio: 4, stock: 3 },
+    { nombre: "Lápiz", precio: 2, stock: 0 },
+    { nombre: "Libro", precio: 20, stock: 2 }
   ];
 
-  let mayores = 0;
+  const valorTotal = productos.reduce(
+    (total, producto) => total + producto.precio * producto.stock,
+    0
+  );
 
-  for (const persona of personas) {
-    if (persona.edad >= 18) {
-      mayores++;
-    }
-  }
-
-  const resultado = document.querySelector("#resultado4");
-  resultado.textContent = "Mayores de edad: " + mayores;
+  const salida = document.querySelector("#resultado4");
+  salida.textContent = "Valor total del inventario: " + valorTotal + " €";
 }

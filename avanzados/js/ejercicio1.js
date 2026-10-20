@@ -1,15 +1,11 @@
 /*
-  EJERCICIO 1: CREAR UN OBJETO PERSONA
+  EJERCICIO 1: FUNCIÓN FLECHA Y CALLBACK
 
   ENUNCIADO:
-  Crea un objeto llamado persona con las propiedades nombre, edad
-  y ciudad.
-
-  Muestra un mensaje como:
-  “Ana tiene 30 años y vive en Madrid”.
+  Crea una función flecha llamada triplicar y pásala a aplicar(4, triplicar).
 
   OBJETIVO:
-  Piensa cómo crear un objeto y cómo acceder a sus propiedades.
+  Piensa cómo definir una función flecha y cómo pasarla como callback.
 
   PISTA:
   Consulta analisis.md si necesitas orientación.

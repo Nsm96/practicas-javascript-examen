@@ -1,103 +1,83 @@
 # Análisis — Ejercicios avanzados
 
-Antes de mirar una solución, intenta responder a las preguntas de cada  
-ejercicio. Después, si lo necesitas, lee las pistas.
+Antes de mirar una solución, intenta responder a las preguntas de cada ejercicio. Después, si lo necesitas, lee las pistas.
 
-## Ejercicio 1: Crear un objeto persona
-
-### Para pensar
-
-- ¿Qué propiedades necesita el objeto?
-- ¿Cómo se accede a cada propiedad?
-- ¿Cómo se construye el mensaje final?
-
-### Pistas
-
-- Necesitarás un objeto llamado `persona`.
-- El objeto tendrá `nombre`, `edad` y `ciudad`.
-- Puedes acceder a las propiedades con punto.
-- Tendrás que construir el mensaje y mostrarlo.
-
-## Ejercicio 2: Recorrer un array de objetos
+## Ejercicio 1: Función flecha y callback
 
 ### Para pensar
-
-- ¿Qué es un array de objetos?
-- ¿Cómo puedes recorrerlo?
-- ¿Cómo accedes a las propiedades de cada objeto?
-- ¿Cómo construyes cada línea del resultado?
+- ¿Qué es una función flecha?
+- ¿Qué es una callback?
+- ¿Cómo se pasa una función como argumento?
+- ¿Qué debe devolver `aplicar`?
 
 ### Pistas
+- `triplicar` debe ser una función flecha que multiplique por 3.
+- `aplicar` recibe un número y una función.
+- Dentro de `aplicar`, llama a la función recibida con el número.
+- El resultado de `aplicar(4, triplicar)` debe ser 12.
 
-- El array contiene objetos.
-- Cada objeto tiene `nombre` y `precio`.
-- Puedes usar un bucle para recorrer el array.
-- Dentro del bucle accederás a `nombre` y `precio`.
-- Tendrás que mostrar cada producto.
-
-## Ejercicio 3: Filtrar productos caros
+## Ejercicio 2: Filtrar y transformar notas
 
 ### Para pensar
-
-- ¿Qué condición define un producto caro?
-- ¿Cómo puedes comprobar esa condición?
-- ¿Qué necesitas mostrar?
+- ¿Qué método selecciona elementos que cumplen una condición?
+- ¿Qué método transforma cada elemento?
+- ¿Qué condición define un aprobado?
+- ¿Cómo se calcula el doble de cada nota?
 
 ### Pistas
+- Usa `filter` para obtener las notas mayores o iguales que 5.
+- Usa `map` para obtener el doble de cada nota.
+- Ambos métodos devuelven un array nuevo.
+- Muestra ambos resultados.
 
-- Necesitarás el array de productos.
-- Recorre el array y comprueba si el precio es mayor que 50.
-- Si cumple la condición, muestra el producto.
-- Si no, no hagas nada.
-
-## Ejercicio 4: Contar mayores de edad
+## Ejercicio 3: Buscar un producto
 
 ### Para pensar
-
-- ¿Qué datos tienes?
-- ¿Qué condición define un mayor de edad?
-- ¿Qué necesitas contar?
-- ¿Qué estructura te permite recorrer el array?
+- ¿Qué método busca el primer elemento que cumple una condición?
+- ¿Qué devuelve si no encuentra nada?
+- ¿Cómo se comprueba el resultado?
 
 ### Pistas
+- Usa `find` sobre el array de productos.
+- La condición es `producto.id === 2`.
+- Si encuentra, muestra el nombre.
+- Si no, muestra “Producto no encontrado”.
 
-- Necesitarás el array de personas.
-- Necesitarás un contador.
-- Recorre el array y comprueba si la edad es mayor o igual que 18.
-- Si cumple, incrementa el contador.
-- Al final tendrás que mostrar el contador.
-
-## Ejercicio 5: Calcular el total de una compra
+## Ejercicio 4: Valor de un inventario
 
 ### Para pensar
-
-- ¿Qué datos tienes?
-- ¿Qué tienes que calcular para cada producto?
-- ¿Cómo se obtiene el total?
-- ¿Qué necesitas acumular?
+- ¿Qué método acumula un resultado?
+- ¿Qué se acumula en cada producto?
+- ¿Qué valor inicial necesita?
 
 ### Pistas
+- Usa `reduce` sobre el array de productos.
+- En cada paso, suma `precio * stock`.
+- El valor inicial es 0.
+- El resultado debe ser 52.
 
-- Cada producto tiene precio y cantidad.
-- El subtotal de cada producto es precio por cantidad.
-- Necesitarás una variable para acumular el total.
-- Recorre el array y suma cada subtotal.
-- Al final tendrás que mostrar el total.
-
-## Ejercicio 6: Función que busca una persona
+## Ejercicio 5: Copiar y ampliar un array con spread
 
 ### Para pensar
-
-- ¿Qué parámetros necesita la función?
-- ¿Qué debe devolver si encuentra la persona?
-- ¿Qué debe devolver si no la encuentra?
-- ¿Cómo puedes recorrer el array?
-- ¿Cómo puedes comprobar el nombre?
+- ¿Qué es el operador spread?
+- ¿Cómo se copia un array sin modificar el original?
+- ¿Cómo se añade un elemento al final?
 
 ### Pistas
+- Usa `[...notas]` para copiar.
+- Añade el 9 después del spread.
+- El original no debe cambiar.
+- Muestra ambos arrays.
 
-- La función se llama `buscarPersona`.
-- Recibe un array y un nombre.
-- Recorre el array y compara cada nombre con el buscado.
-- Si lo encuentra, devuelve la persona.
-- Si termina el bucle sin encontrarlo, devuelve `null`.
+## Ejercicio 6: Filtrar catálogo con módulos
+
+### Para pensar
+- ¿Qué es un módulo?
+- ¿Cómo se exporta e importa?
+- ¿Qué métodos se usan para filtrar y transformar?
+
+### Pistas
+- `catalogo.js` exporta los productos.
+- `filtrarCatalogo.js` exporta una función que usa `filter` y `map`.
+- `ejercicio6.js` importa ambos y muestra el resultado.
+- El resultado debe ser “Cuaderno, Libro”.
