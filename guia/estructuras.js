@@ -1,148 +1,57 @@
-function mostrar(id, texto) {
-  const elemento = document.querySelector(id);
-  elemento.textContent = texto;
+function verCondicionales() {
+  const codigo = `if (condicion) {
+  console.log("Se cumple la condición");
+} else if (otraCondicion) {
+  console.log("Se cumple la otra condición");
+} else {
+  console.log("No se cumple ninguna");
+}`;
+
+  const bloque = document.querySelector("#codigo-condicionales");
+  bloque.textContent = codigo;
 }
 
-function ejemploVariables() {
-  const precio = 40;
-  let total = 0;
+function verBucles() {
+  const codigo = `for (let i = 1; i <= 5; i++) {
+  console.log("Vuelta número " + i);
+}`;
 
-  total = precio * 2;
-
-  mostrar("#resultadoVariables", "Total: " + total + " €");
+  const bloque = document.querySelector("#codigo-bucles");
+  bloque.textContent = codigo;
 }
 
-function ejemploIf() {
-  const nota = 8;
-
-  let mensaje;
-
-  if (nota >= 9) {
-    mensaje = "Sobresaliente";
-  } else if (nota >= 7) {
-    mensaje = "Notable";
-  } else if (nota >= 5) {
-    mensaje = "Aprobado";
-  } else {
-    mensaje = "Suspenso";
-  }
-
-  mostrar("#resultadoIf", mensaje);
+function verFunciones() {
+  const codigo = `function sumar(a, b) {
+  return a + b;
 }
 
-function ejemploTernario() {
-  const importe = 120;
+const resultado = sumar(2, 3);
+console.log(resultado); // 5`;
 
-  const descuento = importe >= 100 ? 10 : 0;
-
-  mostrar("#resultadoTernario", "Descuento: " + descuento + " %");
+  const bloque = document.querySelector("#codigo-funciones");
+  bloque.textContent = codigo;
 }
 
-function ejemploFor() {
-  let lineas = [];
+function verArrays() {
+  const codigo = `const notas = [4, 7, 5, 3];
 
-  for (let i = 1; i <= 5; i++) {
-    lineas.push(i);
-  }
+for (const nota of notas) {
+  console.log(nota);
+}`;
 
-  mostrar("#resultadoFor", lineas.join(", "));
+  const bloque = document.querySelector("#codigo-arrays");
+  bloque.textContent = codigo;
 }
 
-function ejemploFuncion() {
-  function calcularTotal(precio, unidades) {
-    return precio * unidades;
-  }
+function verObjetos() {
+  const codigo = `const persona = {
+  nombre: "Ana",
+  edad: 30,
+  ciudad: "Madrid"
+};
 
-  const total = calcularTotal(4, 3);
+console.log(persona.nombre);`;
 
-  mostrar("#resultadoFuncion", "Total: " + total + " €");
-}
-
-function ejemploFlecha() {
-  const doble = (numero) => numero * 2;
-
-  mostrar("#resultadoFlecha", "El doble de 4 es " + doble(4));
-}
-
-function ejemploCallback() {
-  function aplicar(numero, operacion) {
-    return operacion(numero);
-  }
-
-  const triplicar = (numero) => numero * 3;
-
-  mostrar("#resultadoCallback", "Resultado: " + aplicar(4, triplicar));
-}
-
-function ejemploArray() {
-  const precios = [4, 6, 8];
-
-  mostrar(
-    "#resultadoArray",
-    "Primer precio: " + precios[0] +
-    " — Último precio: " + precios[precios.length - 1]
-  );
-}
-
-function ejemploObjeto() {
-  const producto = {
-    nombre: "Cuaderno",
-    precio: 4
-  };
-
-  mostrar(
-    "#resultadoObjeto",
-    producto.nombre + " — " + producto.precio + " €"
-  );
-}
-
-function ejemploFilter() {
-  const notas = [4, 7, 9, 3];
-
-  const aprobados = notas.filter((nota) => nota >= 5);
-
-  mostrar("#resultadoFilter", "Aprobados: " + aprobados.join(", "));
-}
-
-function ejemploMap() {
-  const precios = [10, 20, 30];
-
-  const dobles = precios.map((precio) => precio * 2);
-
-  mostrar("#resultadoMap", "Dobles: " + dobles.join(", "));
-}
-
-function ejemploFind() {
-  const productos = [
-    { id: 1, nombre: "Libro" },
-    { id: 2, nombre: "Lápiz" }
-  ];
-
-  const encontrado = productos.find((producto) => producto.id === 2);
-
-  mostrar("#resultadoFind", "Producto encontrado: " + encontrado.nombre);
-}
-
-function ejemploReduce() {
-  const notas = [6, 8, 4, 10];
-
-  const suma = notas.reduce((acumulado, nota) => acumulado + nota, 0);
-
-  mostrar("#resultadoReduce", "Suma total: " + suma);
-}
-
-function ejemploSpread() {
-  const notas = [5, 8, 6];
-
-  const masNotas = [...notas, 9];
-
-  mostrar(
-    "#resultadoSpread",
-    "Original: " + notas.join(", ") +
-    " — Nuevo: " + masNotas.join(", ")
-  );
-}
-
-function ejemploDom() {
-  mostrar("#resultadoDom", "Este texto se ha escrito desde JavaScript");
+  const bloque = document.querySelector("#codigo-objetos");
+  bloque.textContent = codigo;
 }
