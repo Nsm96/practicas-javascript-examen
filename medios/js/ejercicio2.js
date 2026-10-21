@@ -15,12 +15,18 @@
 
 function ejercicio2() {
   // Declara las variables necesarias
-
+  const numeros = [-8,-3,-12,-1,-6];
+  let mayor = numeros[0];
 
   // Implementa la lógica necesaria
-
+  for (const numero of numeros){
+    if (numero > mayor){
+      mayor = numero;
+    } 
+  }
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado2");
-  resultado.textContent = "";
+  resultado.textContent = "El mayor es: " + mayor;
 }
+

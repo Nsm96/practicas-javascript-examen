@@ -14,12 +14,21 @@
 
 function ejercicio4() {
   // Declara las variables necesarias
+  const datos = [
+    [2,4,6],
+    [1,3,5]
+  ]
 
+  let sumaTotal = 0;
 
   // Implementa la lógica necesaria
-
+  for(fila of datos){
+    for (numero of fila){
+      sumaTotal += numero;
+    }
+  }
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado4");
-  resultado.textContent = "";
+  resultado.textContent = "La suma es: " + sumaTotal;
 }

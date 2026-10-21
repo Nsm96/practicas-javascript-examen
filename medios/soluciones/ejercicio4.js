@@ -7,7 +7,7 @@ function ejercicio4() {
   let sumaTotal = 0;
 
   for (const fila of matriz) {
-    for (const numero de fila) {
+    for (const numero of fila) {
       sumaTotal += numero;
     }
   }

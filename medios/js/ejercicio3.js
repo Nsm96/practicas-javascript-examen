@@ -14,12 +14,18 @@
 
 function ejercicio3() {
   // Declara las variables necesarias
-
+  const notas = [6,8,4,10];
+  let media = 0;
+  let suma = 0;
 
   // Implementa la lógica necesaria
+  for (const nota of notas){
+    suma += nota;
+  }
 
+  media = suma / notas.length;
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado3");
-  resultado.textContent = "";
+  resultado.textContent = "La media es: " + media;
 }

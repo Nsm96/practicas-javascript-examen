@@ -19,7 +19,11 @@
 
 function ejercicio6() {
   // Declara las variables necesarias
-
+function precioFinal (precio, descuento = 10){
+  const totalConDescuento = (precio * descuento) / 100;
+  return precio - totalConDescuento;
+  
+}
 
   // Implementa la lógica necesaria
 

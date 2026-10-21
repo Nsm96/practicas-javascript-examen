@@ -16,12 +16,18 @@
 
 function ejercicio5() {
   // Declara las variables necesarias
+const jamones = 23;
+const empleados = 10;
+let repartidos = 0;
+let totalRepartidos = 0;
 
+let sobrantes = 0;
 
   // Implementa la lógica necesaria
-
+repartidos = Math.floor(jamones / empleados);
+sobrantes = jamones % empleados;
 
   // Muestra el resultado
   const resultado = document.querySelector("#resultado5");
-  resultado.textContent = "";
+  resultado.textContent = "Cada uno recibe: " + repartidos + " y sobran : " + sobrantes;
 }
